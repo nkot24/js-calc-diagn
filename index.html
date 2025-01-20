@@ -14,8 +14,32 @@
 
     <script>
       document.addEventListener("click", handleClick);
+      let num1 = document.getElementById("1sk");
+      let operator = document.getElementById("op");
+      let num2 = document.getElementById("2sk");
+
       function handleClick() {
         console.log("Rēķināt poga nospiesta!");
+        let num1_value = num1.Value;
+        let num2_value = num2.Value;
+        let operator_value = operator.Value;
+        switch (operator_value) {
+          case "+":
+            return console.log(num1_value + num2_value);
+
+            break;
+          case "-":
+            return console.log(num1_value - num2_value);
+
+          case "*":
+            return console.log(num1_value * num2_value);
+
+          case "/":
+            return console.log(num1_value / num2_value);
+
+          default:
+            break;
+        }
       }
     </script>
   </body>
