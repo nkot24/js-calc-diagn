@@ -13,13 +13,15 @@
     <button id="btn1">Rēķināt</button>
 
     <script>
-      document.addEventListener("click", handleClick);
       let num1 = document.getElementById("1sk");
       let operator = document.getElementById("op");
       let num2 = document.getElementById("2sk");
-
+      document.addEventListener("click", handleClick);
       function handleClick() {
         console.log("Rēķināt poga nospiesta!");
+        rez();
+      }
+      function rez() {
         let num1_value = num1.Value;
         let num2_value = num2.Value;
         let operator_value = operator.Value;
